@@ -40,5 +40,11 @@ public class UserService {
 		return ur.findAll();
 		
 	}
+	
+	public void delete(long id) {
+		
+		ur.delete(id);
+		
+	}
 
 }

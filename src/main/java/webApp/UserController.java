@@ -47,5 +47,13 @@ public class UserController {
 		
 	}
 	
+	@RequestMapping(value = "{id}", method = RequestMethod.DELETE)
+	@ResponseBody
+	public void delete(@PathVariable Long id) {
+	
+		userService.delete(id);
+		
+	}
+	
 
 }
