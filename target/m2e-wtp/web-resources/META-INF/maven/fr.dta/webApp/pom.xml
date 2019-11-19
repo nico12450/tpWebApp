@@ -16,7 +16,7 @@
 		<spring.version>4.2.4.RELEASE</spring.version>
 		<servlet.version>4.0.1</servlet.version>
 		<hibernate.version>4.3.11.Final</hibernate.version>
-		<jackson.version>2.6.4</jackson.version>
+		<jackson.version>2.9.10.1</jackson.version>
 		<hibernate.validator.version>5.2.2.Final</hibernate.validator.version>
 
 	</properties>
@@ -41,11 +41,25 @@
 	
 	<dependencies>
 	
+				<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-commons -->
+			<dependency>
+			    <groupId>org.springframework.data</groupId>
+			    <artifactId>spring-data-commons</artifactId>
+			    <version>2.2.1.RELEASE</version>
+			</dependency>
+			
+						<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
+			<dependency>
+			    <groupId>org.springframework.data</groupId>
+			    <artifactId>spring-data-jpa</artifactId>
+			    <version>2.2.1.RELEASE</version>
+			</dependency>
+			
+	
 				<!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
 			<dependency>
 			    <groupId>org.springframework</groupId>
 			    <artifactId>spring-test</artifactId>
-			    <version>5.2.1.RELEASE</version>
 			    <scope>test</scope>
 			</dependency>
 	
